@@ -1,146 +1,161 @@
-*{
-    padding:0;
-    margin:0;
-    overflow-x:hidden;
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
-.banner{
-    background:url('./img/banner-image.jpg')  ;
-    background-position: center;
-    background-size:cover;
-    height:500px;
-    width:100%
-    
+.nav-bar {
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.nav-bar > img {
+  width: 7.5%;
+  height: 50px;
+  justify-self: flex-start;
+}
+.top-nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-nav > a {
+  text-decoration: none;
+}
+.banner {
+  background: url("./img/banner-image.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
 }
 .banner:before {
-    content: "";
-    position: absolute;
-    left: 0; right: 0;
-    top: 0; bottom: 0;
-    
-    ackground: linear-gradient(to right, rgba(0,0,0,.5) ,rgba(0,0,0,.3) );
-    height:500px
-  }
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70;
+  bottom: 0;
 
-  .banner-text{
-    color:white;
-    position: absolute;
-    /* left: 0; right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  height: 500px;
+}
+
+.banner-text {
+  color: white;
+  position: absolute;
+  /* left: 0; right: 0;
     top: 0; bottom: 0; */
-    display:flex;
-    flex-direction:column;
-    padding:7.5% 10%;
+  display: flex;
+  flex-direction: column;
+  padding: 7.5% 10%;
 }
-.banner-text>h1{
-    width:76vw;
-    padding-bottom :15px;
-    max-width:500px;
+.banner-text > h1 {
+  width: 76vw;
+  padding-bottom: 15px;
+  max-width: 500px;
 }
-.banner-text>p{
-    width:80vw;
-    max-width:550px;
+.banner-text > p {
+  width: 80vw;
+  max-width: 550px;
 
-    padding-bottom :30px;
+  padding-bottom: 30px;
 }
-.banner-text>button{
-    width:30vw  ;
-    height:50px;
-    max-width:200px;
-
-}
-
-//PARTNERS SECTION
-.advert{
-    display:none;
-}
-.advert{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    padding-bottom:40px;
-}
-.advert>h1{
-    margin:15px 0;
-    padding-left:10%;
-
+.banner-text > button {
+  width: 30vw;
+  height: 50px;
+  max-width: 200px;
 }
 
-.partners-logos{
-    display:flex;
-    align-self:center;
-    width:90%;
-    justify-content: space-evenly;
-    padding:0% 12%;
-    }
-
-    .partners-logos>img{
-        width:15%;
-    }
-
-.action{
-    padding:5% 10%;
-    background:#024052;
-    
+/* PARTNERS SECTION */
+.advert {
+  display: none;
 }
-.action>h1{
-    margin-bottom:15px;
-    
+.advert {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
 }
-.action-subsection{
-    display:flex;
-    justify-content: space-between;
-    
+.advert > h1 {
+  margin: 15px 0;
+  padding-left: 10%;
+}
+
+.partners-logos {
+  display: flex;
+  align-self: center;
+  width: 90%;
+  justify-content: space-evenly;
+  padding: 0% 12%;
+}
+
+.partners-logos > img {
+  width: 15%;
+}
+
+.action {
+  padding: 5% 10%;
+  background: #024052;
+}
+.action > h1 {
+  margin-bottom: 15px;
+}
+.action-subsection {
+  display: flex;
+  justify-content: space-between;
 }
 .action-subsection > div {
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-#action-image{
-    width:50%;
+#action-image {
+  width: 50%;
 }
-.action-card{
-    background:#fff;
-    padding: 20px;
-    border-radius: 15px;
-    
+.action-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
 }
-.action-card-upper{
-    width:100%;
-    display:flex;
-    justify-content: space-between;
+.action-card-upper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.action-card-lower{
- padding:1% 5%;
+.action-card-lower {
+  padding: 1% 5%;
 }
-
 
 /* subscribe section */
 
-.subscribe{
-    display:flex;
-    padding:20px 10%;
+.subscribe {
+  display: flex;
+  padding: 20px 10%;
 }
-.subscribe>div{
-    width:50%
+.subscribe > div {
+  width: 50%;
 }
 @media screen and (min-width: 600px) {
-    .action-card{ width:30vw;}
+  .action-card {
+    width: 30vw;
+  }
 }
 @media screen and (max-width: 600px) {
-    #action-image {
-      display:none;
-    }
-    .action-subsection{
-        display:block;
-        padding:10px;
-        
-    }
-.action-card{
-    margin-bottom:10px;
-}
-.action-card-lower{
-    padding:3px;
-   }
-    
+  #action-image {
+    display: none;
   }
+  .action-subsection {
+    display: block;
+    padding: 10px;
+  }
+  .action-card {
+    margin-bottom: 10px;
+  }
+  .action-card-lower {
+    padding: 3px;
+  }
+}
