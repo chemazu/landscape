@@ -16,15 +16,16 @@
     position: absolute;
     left: 0; right: 0;
     top: 0; bottom: 0;
-    background: rgba(0,0,0,.5);
+    
+    ackground: linear-gradient(to right, rgba(0,0,0,.5) ,rgba(0,0,0,.3) );
     height:500px
   }
 
   .banner-text{
     color:white;
     position: absolute;
-    left: 0; right: 0;
-    top: 0; bottom: 0;
+    /* left: 0; right: 0;
+    top: 0; bottom: 0; */
     display:flex;
     flex-direction:column;
     padding:7.5% 10%;
@@ -55,6 +56,7 @@
     width:100%;
     display:flex;
     flex-direction:column;
+    padding-bottom:40px;
 }
 .advert>h1{
     margin:15px 0;
@@ -71,21 +73,74 @@
     }
 
     .partners-logos>img{
-        width:10%;
+        width:15%;
     }
 
 .action{
     padding:5% 10%;
+    background:#024052;
     
 }
 .action>h1{
     margin-bottom:15px;
+    
 }
 .action-subsection{
     display:flex;
     justify-content: space-between;
     
 }
+.action-subsection > div {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+}
 #action-image{
     width:50%;
 }
+.action-card{
+    background:#fff;
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+.action-card-upper{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.action-card-lower{
+ padding:1% 5%;
+}
+
+
+/* subscribe section */
+
+.subscribe{
+    display:flex;
+    padding:20px 10%;
+}
+.subscribe>div{
+    width:50%
+}
+@media screen and (min-width: 600px) {
+    .action-card{ width:30vw;}
+}
+@media screen and (max-width: 600px) {
+    #action-image {
+      display:none;
+    }
+    .action-subsection{
+        display:block;
+        padding:10px;
+        
+    }
+.action-card{
+    margin-bottom:10px;
+}
+.action-card-lower{
+    padding:3px;
+   }
+    
+  }
