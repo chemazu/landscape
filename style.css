@@ -163,6 +163,30 @@ form>button{
   height: 30px;
   max-width: 200px;
 }
+
+.footer{
+    display:flex;
+    padding: 50px 10%;
+    flex-wrap:wrap;
+    background:#f6f6f6;
+    
+}
+li{
+list-style-type: none;
+padding:10px 0px;
+}
+#footer-logo{width: 10%;
+    height: 60px;
+    justify-self: flex-start;}
+
+.footer>div>p{
+    width:50%;
+}
+.bottom-bar{
+    display:flex;
+    padding: 20px 10%;
+    justify-content:space-between;
+}
 @media screen and (min-width: 600px) {
   .action-card {
     width: 30vw;
