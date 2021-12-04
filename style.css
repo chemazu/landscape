@@ -134,10 +134,34 @@
 
 .subscribe {
   display: flex;
-  padding: 20px 10%;
+  padding: 50px 10%;
 }
 .subscribe > div {
   width: 50%;
+}
+
+.subscribe-right{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+    form{
+    width:100%;
+
+    }
+input{
+    width:100%;
+    height:20px;
+    padding:10px;
+    margin-bottom:10px
+    /* display:block; */
+
+}
+form>button{
+    width: 100%;
+  height: 30px;
+  max-width: 200px;
 }
 @media screen and (min-width: 600px) {
   .action-card {
@@ -158,4 +182,12 @@
   .action-card-lower {
     padding: 3px;
   }
+
+  /* subscribe section */
+
+  .subscribe {
+    display: block;}
+    .subscribe > div {
+        width: 100%;
+      }
 }
