@@ -40,6 +40,7 @@ button {
   background-size: cover;
   height: 500px;
   width: 100%;
+  padding:0px 10%;
 }
 .banner:before {
   content: "";
@@ -59,6 +60,7 @@ button {
   position: absolute;
   display: flex;
   flex-direction: column;
+  padding-top:100px;
 }
 .banner-text > h1 {
   width: 76vw;
