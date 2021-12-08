@@ -106,11 +106,42 @@ justify-content:space-between;}
   .missions{
     display:flex;
     justify-content:space-between;
+    padding:25px 0px;
+
   }
   .missions>div{
     width:25%;
-    height:150px;
-    background:yellow;
+    height:130px;
+    background:#fff;
+    padding:2%;
+    display:flex;
+    flex-direction:column;
+
+  }
+  .missions>div>h1{
+    margin:10px 0;
+  }
+  .missions>div>p{
+    width:95%
+  }
+  .contact-section{
+    padding:100px 10%;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+  }
+  .contact-section>div{
+
+    background:#f3f3f3;
+
+     padding:15px 30px;
+    /*height:130px;
+    border-radius:15px; */
+  }
+
+  .contact-section>div>p{
+     margin:5px 0;
+    /*width:70%; */
   }
   @media screen and (max-width:600px){
     .highlights{
@@ -137,4 +168,22 @@ justify-content:space-between;}
       height: 200px;
       width: 10%;
     }
+    .missions{
+      display:block;
+      width:100%;
+    }
+    .missions>div{
+      width:100%;
+      margin:20px 0 ;
+    }
+
+    .contact-section{
+      display:block;
+    padding:50px 10%;
+
+    }
+    .press{
+      margin-bottom:30%;
+    }
+    
   }
