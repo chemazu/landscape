@@ -60,7 +60,6 @@ button {
   position: absolute;
   display: flex;
   flex-direction: column;
-  padding-top:100px;
 }
 .banner-text > h1 {
   width: 76vw;
