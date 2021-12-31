@@ -1,0 +1,101 @@
+$pry-color: rgb(16, 53, 41);
+$sec-color: #f1c34e;
+* {
+  padding: 0;
+  margin: 0;
+}
+button {
+  background: $sec-color;
+  border: 1.5px solid transparent;
+  padding: 1em;
+  min-width: 110px;
+}
+body {
+  font-family: "Comic Neue", cursive;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+.nav-bar {
+  height: 50px;
+  background-color: $pry-color;
+  align-items: center;
+  padding: 15px 10%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  .top-nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .nav-auth {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+  }
+}
+.mob-nav-close {
+  background-color: $pry-color;
+  align-items: center;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+.mob-nav-list {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(16, 53, 41);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .mob-nav-open {
+    background-color: #fff;
+    align-items: center;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list {
+    padding: 15px 10%;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-between;
+    font-weight: extra-bold;
+    color: white;
+    div {
+      display: flex;
+      height: 25%;
+      flex-direction: column;
+      p {
+        height: 15%;
+      }
+      a {
+        border-bottom: 1px solid white;
+        font-weight: 700px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mob-nav-close,
+  .mob-nav-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav-bar,
+  .mob-nav-list {
+    display: none;
+  }
+}
