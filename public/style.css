@@ -22,7 +22,7 @@ a {
 
 .nav-bar {
   height: 50px;
-  background-color: #103529;
+  background-color: #fff;
   align-items: center;
   padding: 15px 10%;
   display: grid;
@@ -135,7 +135,7 @@ a {
 }
 
 .partners {
-  background: #103529;
+  background: #fff;
   padding: 50px 10%;
 }
 .partners div {
@@ -151,10 +151,10 @@ a {
 .action {
   background: #103529;
   padding: 50px 10%;
-  padding-top: 0px;
 }
 .action h1 {
   margin-bottom: 30px;
+  color: #fff;
 }
 .action div {
   display: grid;
@@ -180,9 +180,65 @@ a {
   grid-template-rows: auto auto auto;
 }
 
+.subscribe {
+  padding: 50px 10%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.subscribe div {
+  padding: 10px 0;
+}
+.subscribe .subscribe-right {
+  width: 100%;
+}
+.subscribe .subscribe-right form input {
+  width: 60%;
+  height: 30px;
+  margin-bottom: 30px;
+}
+.subscribe .subscribe-right form button {
+  display: block;
+}
+
+.footer {
+  background: #acaaaa;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  padding: 50px 10%;
+}
+.footer .footer-logo-container > p {
+  width: 70%;
+}
+.footer div h3 {
+  padding-bottom: 10px;
+}
+.footer div li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.bottom-bar {
+  display: flex;
+  color: #fff;
+  background: #202020;
+  padding: 10px 10%;
+}
+
 @media screen and (max-width: 480px) {
   .banner-section:before {
     top: 50px;
+  }
+
+  .action div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
